@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IO Chat App</title>
+    <!-- CSS dependencies -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
+</head>
+<body>
+    <div class="container">
+        <div id="userFormArea" class="row">
+            <div class="col-md-12">
+                <form id="userForm">
+                    <div class="form-group">
+                        <label>Enter Username</label>
+                        <textarea class="form-control" id="username">
+
+                        </textarea>
+                        <br>
+                        <input type="submit" class="btn btn-primary" value="Login"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="messageArea" class="row">
+
+            <div class="col-md-8">
+                <div class="chat" id="chat">
+
+                </div>
+                <div id="feedback"></div>
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label>Enter Message</label>
+                        <textarea class="form-control" id="message">
+
+                        </textarea>
+                        <br>
+                        <input type="submit" class="btn btn-primary" value="Send Message"/>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div class="well" id="usersContainer">
+                    <h3>Users</h3>
+                    <ul class="list-group" id="users">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="alert.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
